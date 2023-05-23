@@ -1,0 +1,165 @@
+html,body {
+    height:100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #666;
+	background: #f2f2f2; 
+	font-size: 1em;
+	line-height: 1.5em;
+	
+	padding-top: 80px;
+}
+
+h1 {
+	font-size: 2.3em;
+  line-height: 1.3em;
+	margin: 15px 0;
+	text-align: center;
+	font-weight: 300;
+}
+
+p {
+	margin: 0 0 1.5em 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+h3 {
+	color: blue;
+}
+h4 {
+	color: red;
+	font-style: oblique;
+}
+
+/************ 
+//-------------------------------
+// CABECERA
+//-------------------------------
+************/
+#main-header {
+	/*background: #333;*/
+	background:linear-gradient(to right, rgb(255, 255, 255), rgb(23, 63, 63));
+	color: rgb(105,105,105);
+	height:125px;
+	
+	width: 100%;
+	left: 0;
+	top: 0;
+	position: fixed;
+}	
+	#main-header a {
+		color: white;
+	}
+	
+	
+/*
+ * Logo
+ */
+#logo-header {
+	float: left;
+	padding: 15px 0 0 20px;
+	text-decoration: none;
+}
+	#logo-header:hover {
+		color: #0b76a6;
+	}
+	
+	#logo-header .site-name {
+		display: block;
+		font-weight: 700;
+		font-size: 1.2em;
+	}
+	
+	#logo-header .site-desc {
+		display: block;
+		font-weight: 300;
+		font-size: 0.8em;
+		color: #999;
+	}
+	
+
+/*
+ * Navegación
+ */
+nav {
+	float: right;
+}
+	nav ul {
+		margin: 0;
+ 		padding: 0;
+		list-style: none;
+		padding-right: 20px;
+	}
+	
+		nav ul li {
+			display: inline-block;
+			line-height: 25px; /*alto del logo-alto cabecera: 120-95*/
+		}
+			
+			nav ul li a {
+				display: block;
+				padding: 0 12px;
+				text-decoration: none;
+			}
+			
+				nav ul li a:hover {
+					background: #0b76a6;
+				}
+	
+
+
+article {
+    width: 79%;
+	/*top: 130px;*/
+    /*height:70%;*/
+    background: #ccc;
+    float: right;
+    overflow: auto;
+    padding-bottom: 60px;
+    padding-top:30px;
+}
+
+aside {
+    /*background:linear-gradient(to right, rgb(255, 255, 255), rgb(23, 63, 63));*/
+	background-image:url("../img/fondo_lateral.png") ;
+    background-repeat: no-repeat;
+    background-position: center bottom ;
+    background-size: 100%;
+	float: left;
+    top: 130px;
+    left:10px;
+    position: fixed;
+    /*border: 1px solid red;*/
+    width: 19%;
+	/*overflow: auto;
+    padding-bottom: 60px;
+    padding-top:30px;
+    height:70%;*/
+   
+
+    /*Si quisieramos ocultar el contenido relacionado pondriamos visibility a hidden*/
+    /*visibility: hidden;*/
+}
+#main-footer {
+	background: #333;
+	width: 100%;
+	color: white;
+	text-align: center;
+	padding: 20px;
+	/*margin-top: 40px;*/
+    bottom: 0;
+}
+	#main-footer p {
+		margin: 0;
+	}
+	
+	#main-footer a {
+		color: white;
+	}
