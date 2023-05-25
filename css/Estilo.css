@@ -26,4 +26,31 @@
 				background: #0b76a6;
 			}
 
-
+			.container-pdf1{
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+				margin-bottom: 100px;
+			  }
+			  
+			  .container-pdf2{
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+				margin-bottom: 100px;
+			  }
+			  
+			  @media (min-width: 300px) and (max-width: 900px){
+				.container-pdf1{
+				  display: flex;
+				  flex-direction: column;
+				  justify-content: center;
+				  align-items: center;
+				}
+				.container-pdf2{
+				  display: flex;
+				  flex-direction: column;
+				  justify-content: center;
+				  align-items: center;
+				}
+			}

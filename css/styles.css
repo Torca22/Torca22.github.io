@@ -19,22 +19,35 @@ h1{
   color: antiquewhite;
 }
 
+a{
+  font-size:larger;
+  font-family: 'Hind Siliguri', sans-serif;
+  color: rgb(153, 153, 0);
+  text-decoration: none;
+}
+
 body {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   font-family: 'Roboto Slab', serif;
-  background-color: mintcream;
+  background-color: rgb(255, 255, 255);
+}
+
+.navigation-container a{
+  color: khaki;
 }
 
 /*Navbar*/
 .navbar {
   width: 250px;
+  height: 2000px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
-  margin-top: 2em;
+  background-color:black;
+  color: aliceblue;
+  
 }
 
 .logo-navbar {
@@ -44,6 +57,11 @@ body {
   justify-content: center;
   align-items: center;
   margin-bottom: 16px;
+}
+
+.navigation-container a:hover{
+  background-color:rgb(26, 26, 26);
+  
 }
 
 .logo-img {
@@ -65,6 +83,9 @@ body {
   flex-direction: column;
   width: 70%;
 }
+
+  
+
 
 header {
   display: flex;
