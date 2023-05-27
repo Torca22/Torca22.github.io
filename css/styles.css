@@ -47,7 +47,7 @@ body {
   align-items: center;
   background-color:black;
   color: aliceblue;
-  position: fixed;
+  /* position: fixed; */
   z-index: 100;
   
 }
