@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/img/epf_icon.ico" type="image/x-icon">
     <title>Evaluación de propiedades físicas 76.48</title>
+    <link rel="" href="./script.js"/> 
     <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="fonts/awesome/css/all.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@700&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <navbar class="navbar">
@@ -40,36 +42,56 @@
                   </section>
               </header>
     <section>
-        <h3>Formulario de Contacto</h3>
-        <form action="" method="post">
+               
+        <h3><span class="fa fa-envelope"></span> Formulario de Contacto</h3>
+        <form  id="form" action="" name="formulario">
             <p>
-                <label for="name">Nombre:
-                <input type="text" name="nombre" id="name" required placeholder="Ingresar nombre"></label>
+                <label for="nombreAlumno">Nombre:
+                    <input type="text" id="nombreAlumno" placeholder="Nombre" class="input-form"></label>
             </p>
             <p>
-                <label for="edad">Edad:</label>
-                <input type="number" name="anios" id="edad" min="0" max="10">
+                <label for="apellidoAlumno">Apellido:
+                    <input type="text" id="apellidoAlumno" placeholder="Apellido" class="input-form"></label>
             </p>
+            <p>
+                <label for="email">Email:
+                <input type="email" id="email" placeholder="Email" class="input-form">
+                </label>
+            </p>
+            <p></p>
+            <p>
+                <label for="dni">Dni:</label>
+                <input type="number" id="dni" placeholder="DNI" class="input-form">
+            </p>
+            <p>
+                <label for="carrera">Carrera:</label>
+                <select id="carreras_de_grado">
+                    <option></option>
+                    <option value="Ingeniería Ambiental">Ingeniería Ambiental</option>
+                    <option value="Ingeniería Biomédica">Ingeniería Biomédica</option>
+                    <option value="Ingeniería Civil">Ingeniería Civil</option>
+                    <option value="Ingeniería de las Telecomunicaciones">Ingeniería de las Telecomunicaciones</option>
+                    <option value="Ingeniería Electrónica">Ingeniería Electrónica</option>
+                    <option value="Ingeniería Geológica">Ingeniería Geológica</option>
+                    <option value="Ingeniería Industrial">Ingeniería Industrial</option>
+                    <option value="Ingeniería Química">Ingeniería Química</option>
+                </select>
+            </p>
+            <p>
+                <label for="consulta">Consulta</label>
+                <input type="text" id="consulta" class="input-form">
+            </p> 
 
-            <p>
-                <label for="clave">Clave</label>
-                <input type="password" name="contrasenia" id="clave">
-            </p>
-
-            <p>
+            <!-- <p>
                 <label for="fecha">Fecha Nac.</label>
                 <input type="date" name="fnac" id="fecha" min="2000-01-01"  max="" >
-            </p>
-
-            <p>
-
-            </p>
-
-            <input type="submit" value="Enviar">
+            </p> -->
+            <p class="warnings" id="warnings"></p>
+              <button type="submit" id="boton" class="enviar-form">ENVIAR</button>
         </form>
         <br> <br>  <br>
 
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13145.526852393323!2d-58.4396099!3d-34.5438895!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb447c267d717%3A0x8775b9ad67c27913!2sPabellon%20Industrias%2C%20Ciudad%20Universitaria!5e0!3m2!1ses!2sar!4v1684982129938!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13145.526852393323!2d-58.4396099!3d-34.5438895!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb447c267d717%3A0x8775b9ad67c27913!2sPabellon%20Industrias%2C%20Ciudad%20Universitaria!5e0!3m2!1ses!2sar!4v1684982129938!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
     <footer>
         <ul>
@@ -79,6 +101,6 @@
         <p>Este sitio web no depende de la Universidad de Buenos Aires. Abril, 2023. CABA, Buenos Aires, Argentina. Reservados todos los derechos</p>
     
     </footer>
-
+    <script type="" src="script.js"></script>
 </body>
 </html>

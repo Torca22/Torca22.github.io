@@ -1,4 +1,5 @@
 * {
+  /* height: ; */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -40,6 +41,7 @@ body {
 
 /*Navbar*/
 .navbar {
+  /* position: fixed; ARREGLAR ACÁ PARA QUE SE PUEDA FIJAR EL MENU */ 
   width: 250px;
   height: 2000px;
   display: flex;
@@ -129,7 +131,7 @@ header {
   border: 1px solid black;
 }
 
-footer {
+footer {  
   text-align: center;
 }
 
