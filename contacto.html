@@ -14,6 +14,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@700&display=swap" rel="stylesheet"> 
 </head>
+
 <body>
     <navbar class="navbar">
 		<div class="logo-navbar">
@@ -42,27 +43,43 @@
                   </section>
               </header>
     <section>
-               
-        <h3><span class="fa fa-envelope"></span> Formulario de Contacto</h3>
+
+        <br><br>
+
+
+      <fieldset>        
+        <p><h3><span class="fa fa-envelope"></span> Formulario de Contacto</h3>
         <form  id="form" action="" name="formulario">
+        </p>
             <p>
                 <label for="nombreAlumno">Nombre:
                     <input type="text" id="nombreAlumno" placeholder="Nombre" class="input-form"></label>
             </p>
+
+            <br>
+
             <p>
                 <label for="apellidoAlumno">Apellido:
                     <input type="text" id="apellidoAlumno" placeholder="Apellido" class="input-form"></label>
             </p>
+
+            <br>
+
             <p>
                 <label for="email">Email:
                 <input type="email" id="email" placeholder="Email" class="input-form">
                 </label>
             </p>
-            <p></p>
+
+            <br>
+
             <p>
                 <label for="dni">Dni:</label>
                 <input type="number" id="dni" placeholder="DNI" class="input-form">
             </p>
+
+            <br>
+
             <p>
                 <label for="carrera">Carrera:</label>
                 <select id="carreras_de_grado">
@@ -77,24 +94,43 @@
                     <option value="Ingeniería Química">Ingeniería Química</option>
                 </select>
             </p>
+
+            <br>
+
             <p>
                 <label for="consulta">Consulta</label>
                 <input type="text" id="consulta" class="input-form">
             </p> 
+
+            <br><br>
 
             <!-- <p>
                 <label for="fecha">Fecha Nac.</label>
                 <input type="date" name="fnac" id="fecha" min="2000-01-01"  max="" >
             </p> -->
             <p class="warnings" id="warnings"></p>
-              <button type="submit" id="boton" class="enviar-form">ENVIAR</button>
+              <button type="submit" id="boton" class="enviar-form">Enviar</button>
         </form>
+
+        <br>
+
+    </fieldset> 
+
         <br> <br>  <br>
 
+        <h2 class="ubi">
+            <i class="fa-solid fa-location-dot"></i>
+            Ubicación:
+        </h2>
+
+        <br>
+
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13145.526852393323!2d-58.4396099!3d-34.5438895!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb447c267d717%3A0x8775b9ad67c27913!2sPabellon%20Industrias%2C%20Ciudad%20Universitaria!5e0!3m2!1ses!2sar!4v1684982129938!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
     </section>
+
     <footer>
-        <ul>
+
             <li><a href="https://fi.uba.ar" target="_blank"><img src="img/fiuba.png" alt="Página de la FIUBA" width="100"></a></li>
             <li><a href="https://campusgrado.fi.uba.ar/course/view.php?id=495" target="_blank"><img src="/img/campus.png" alt="Campus virtual de la materia" width="100"></a></li>
         </ul>
