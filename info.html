@@ -14,8 +14,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
+  
+  <script type="" src="script.js"></script>
 
-  <navbar class="navbar">
+  <!-- <navbar class="navbar">
 		<div class="logo-navbar">
 				  <img src="img/Logo-fiuba_big (2).png" alt="Logo" class="logo-img" >
 				  <p class="logo-title">FIUBA </p>
@@ -27,9 +29,24 @@
 		  <li><a href="material.html"> Material</a> </li>  
 		  <li><a href="contacto.html"> Contacto</a> </li>
 		</ul>
-	  </navbar>
+	  </navbar> -->
+    <navbar class="navbar" id="mySidebar">
 
-  <div class="content-container">
+      <div class="logo-navbar">
+            <img src="img/Logo-fiuba_big (2).png" alt="Logo" class="logo-img" >
+      </div>
+      <p class="logo-title">FIUBA </p>
+      
+          <a href="index.html"> Inicio</a>
+          <a href="info.html"> Información</a>
+          <a href="material.html"> Material</a>
+          <a href="contacto.html"> Contacto</a>
+          
+      </navbar>
+      <div id="main">
+          <button class="openbtn" onclick="togNav()" >&#9776;</button>
+      </div>
+            <div class="content-container">
 
     <header>
       <section class="title">
@@ -54,12 +71,12 @@
  <footer>
 				<ul>
 					<li><a href="https://fi.uba.ar" target="_blank"><img src="img/fiuba.png" alt="Página de la FIUBA" width="100"></a></li>
-					<li><a href="https://campusgrado.fi.uba.ar/course/view.php?id=495" target="_blank"><img src="/img/campus.png" alt="Campus virtual de la materia" width="100"></a></li>
+					<li><a href="https://campusgrado.fi.uba.ar/course/view.php?id=495" target="_blank"><img src="/img/campus.png" alt="Campus virtual de la materia" width="150"></a></li>
 				</ul>
 				<p>Este sitio web no depende de la Universidad de Buenos Aires. Abril, 2023. CABA, Buenos Aires, Argentina. Reservados todos los derechos</p>
 			
 			</footer>
-
+      <script type="" src="script.js"></script>
 
 </body>
 </html>

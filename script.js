@@ -33,7 +33,7 @@ form.addEventListener("submit", e=>{
         entrar = true
     }
     if (carreras_de_grado.selectedIndex === 0){
-        warnings += `Seleccione una carrera <br>`
+        warnings += `- Seleccione una carrera <br>`
         entrar = true
     }
     if(consulta.value.length <3){
@@ -46,3 +46,23 @@ form.addEventListener("submit", e=>{
 
     
 })
+
+function openNav() {
+    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+
+function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+  }
+
+  function togNav(){
+    var element = document.getElementById("mySidebar");
+    if (element.style.width == "250px") {
+        element.style.width = "0";
+    } else{
+        element.style.width = "250px"
+    }
+
+}

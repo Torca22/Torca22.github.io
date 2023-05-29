@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FIUBA</title>
+	<link rel="shortcut icon" href="/img/epf_icon.ico" type="image/x-icon">
+    <title>Evaluación de propiedades físicas 76.48</title>
+	<link rel="" href="./script.js"/> 
 	<link rel="shortcut icon" href="/favicon/fiuba.ico">
     <link rel="stylesheet" href="css/styles.css" />
 	<link rel="stylesheet" href="fonts/awesome/css/all.css">
@@ -20,21 +22,23 @@
 </head>
   <body>
 
-	<navbar class="navbar">
+	<navbar class="navbar" id="mySidebar">
+
 		<div class="logo-navbar">
 				  <img src="img/Logo-fiuba_big (2).png" alt="Logo" class="logo-img" >
-				  <p class="logo-title">FIUBA </p>
-  
-			  </div>
-		<ul class="navigation-container">
-		  <li><a href="index.html">    Inicio</a> </li>         
-		  <li><a href="info.html">     Información y programa</a> </li>  
-		  <li><a href="material.html"> Material</a> </li>  
-		  <li><a href="contacto.html"> Contacto</a> </li>
-		</ul>
-	  </navbar>
-
-		<div class="content-container">
+		</div>
+		<p class="logo-title">FIUBA</p>
+    
+        <a href="index.html"> Inicio</a>
+        <a href="info.html"> Información</a>
+        <a href="material.html"> Material</a>
+        <a href="contacto.html"> Contacto</a>
+        
+    </navbar>
+    <div id="main">
+        <button class="openbtn" onclick="togNav()" >&#9776;</button>
+    </div>
+          <div class="content-container">
 
 			<header>
 				<section class="title">
@@ -80,13 +84,13 @@
 			<footer>
 				<ul>
 					<li><a href="https://fi.uba.ar" target="_blank"><img src="img/fiuba.png" alt="Página de la FIUBA" width="100"></a></li>
-					<li><a href="https://campusgrado.fi.uba.ar/course/view.php?id=495" target="_blank"><img src="img/campus.png" alt="Campus virtual de la materia" width="100"></a></li>
+					<li><a href="https://campusgrado.fi.uba.ar/course/view.php?id=495" target="_blank"><img src="img/campus.png" alt="Campus virtual de la materia" width="150"></a></li>
 				</ul>
 				<p>Este sitio web no depende de la Universidad de Buenos Aires. Abril, 2023. CABA, Buenos Aires, Argentina. Reservados todos los derechos</p>
 			
 			</footer>
 		</div>
-		
+	    <script type="" src="script.js"></script>
   </body>
 
 </html>
